@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>邯郸市中考成绩查询结果</title>
+  <style>
+    /* 全局样式重置，简单处理不同浏览器默认样式差异 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* 顶部标题栏样式 */
+   .top-bar {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 20px;
+    }
+
+    /* 主体内容容器样式 */
+   .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+    /* 标题样式 */
+   .container h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    /* 成绩展示区域样式 */
+   .score-section {
+      margin-bottom: 30px;
+    }
+
+   .score-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+   .score-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+   .score-table th,
+   .score-table td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+    }
+
+   .score-table th {
+      background-color: #f2f2f2;
+    }
+
+    /* 个人信息展示区域样式 */
+   .info-section {
+      margin-bottom: 30px;
+    }
+
+   .info-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+   .info-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+   .info-table th,
+   .info-table td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+    }
+
+   .info-table th {
+      width: 20%;
+      background-color: #f2f2f2;
+    }
+
+    /* 底部版权信息样式 */
+   .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 顶部标题栏 -->
+  <div class="top-bar">
+    邯郸市教育考试院 - 中考成绩查询结果
+  </div>
+  <!-- 主体内容容器 -->
+  <div class="container">
+
+    <!-- 成绩展示 -->
+    <div class="score-section">
+      <h2>中考成绩</h2>
+      <table class="score-table">
+        <tr>
+          <th>科目</th>
+          <th>成绩</th>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td id="chinese-score-value">106</td>
+        </tr>
+        <tr>
+          <td>数学</td>
+          <td id="math-score-value">102</td>
+        </tr>
+        <tr>
+          <td>英语</td>
+          <td id="english-score-value">112</td>
+        </tr>
+        <tr>
+          <td>物理</td>
+          <td id="physics-score-value">53</td>
+        </tr>
+        <tr>
+          <td>化学</td>
+          <td id="chemistry-score-value">51</td>
+        </tr>
+        <tr>
+          <td>道德与法治</td>
+          <td id="politics-score-value">57</td>
+        </tr>
+        <tr>
+          <td>历史</td>
+          <td id="history-score-value">52</td>
+        </tr>
+                <tr>
+          <td>生物</td>
+          <td id="chinese-score-value">54</td>
+        </tr>
+                <tr>
+          <td>地理</td>
+          <td id="chinese-score-value">53</td>
+        </tr>
+        <tr>
+          <td>体育</td>
+          <td id="pe-score-value">50</td>
+        </tr>
+                <tr>
+          <td>实验</td>
+          <td id="chinese-score-value">20</td>
+        </tr>
+                <tr>
+          <td>信息与科技</td>
+          <td id="chinese-score-value">10</td>
+        </tr>
+        <tr>
+          <td>总分</td>
+          <td id="total-score-value">720</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- 底部版权信息 -->
+  <div class="footer">
+    河北省邯郸市教育考试院 版权所有
+  </div>
+</body>
+
+</html>
